@@ -26,7 +26,7 @@ function updateScramble() {
     scrambleElement.innerHTML = scramble;
 
     if (scrambleElement.innerHTML.split(" ").length <= 20) scrambleElement.setAttribute("style", "font-size: 235%;");
-    else if (scrambleElement.innerHTML.split(" ").length === 45)
+    else if (scrambleElement.innerHTML.split(" ").length <= 80)
         scrambleElement.setAttribute("style", "font-size: 165%;");
     else if (scrambleElement.innerHTML.split(" ").length === 80)
         scrambleElement.setAttribute("style", "font-size: 130%;");
