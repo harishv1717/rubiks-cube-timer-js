@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Rubik's Cube Timer</title>
+
+        <link rel="stylesheet" href="./styles.css" type="text/css" />
+    </head>
+    <body>
+        <form id="cubeform" action="javascript:void(0);">
+            <label for="cube">Scramble:</label>
+            <select name="cubeselect" id="cubeselect">
+                <option value="3x3x3">3x3x3</option>
+                <option value="2x2x2">2x2x2</option>
+                <option value="4x4x4">4x4x4</option>
+                <option value="5x5x5">5x5x5</option>
+                <option value="6x6x6">6x6x6</option>
+                <option value="7x7x7">7x7x7</option>
+            </select>
+        </form>
+
+        <h1 id="scramble">Scramble</h1>
+        <div id="timer">00:00.00</div>
+
+        <div class="img" id="topimg"></div>
+        <div class="img"></div>
+        <div class="img" id="bottomimg"></div>
+
+        <script src="./src/index.js" type="module"></script>
+        <script src="./src/cube.js" type="module"></script>
+        <script src="./src/scramble.js" type="module"></script>
+    </body>
+</html>
