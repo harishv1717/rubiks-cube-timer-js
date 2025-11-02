@@ -1,31 +1,53 @@
 body {
     font-family: monospace;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 #cubeform {
     text-align: center;
+    padding: 1rem;
 }
 
 h1 {
     text-align: center;
     font-size: 235%;
+    margin: 0;
+    padding: 1rem;
 }
 
 #timer {
-    text-align: center;
-    position: relative;
-    top: 165px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 850%;
+    margin-top: -20vh;
+}
+
+.img-container {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-end;
 }
 
 .img {
-    text-align: end;
-    position: relative;
-    top: 130px;
+    display: flex;
+    justify-content: flex-end;
+    width: 645px;
+}
+
+.img img {
+    margin: -10px;
 }
 
 #topimg,
 #bottomimg {
-    position: relative;
-    right: 215px;
+    padding-right: 215px;
 }
